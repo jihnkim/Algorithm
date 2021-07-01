@@ -1,0 +1,15 @@
+"""
+약수 구하기
+"""
+
+n = int(input('INT 를 입력하세요 : '))
+lst = []
+
+for i in range(1, n+1):
+    if i*(n-i) == n:
+        lst.append(i)
+        lst.append(n-i)
+    if i == (n/2):
+        break
+
+print(lst)
